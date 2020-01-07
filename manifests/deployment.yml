@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: dineshsonawanenodejshelloworld 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dineshsonawanenodejshelloworld 
+    spec:
+      containers:
+        - name: dineshsonawanenodejshelloworld 
+          image: profilingwidgetacr.azurecr.io/dineshsonawanenodejshelloworld
+          ports:
+          - containerPort: 8081
